@@ -3,15 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OrangeHRM.LoginTest">
+      <class name="com.BrowserStack.test.CheckoutTest">
         <methods>
+          <include name="addMultipleItemsAndRemoveTest"/>
+          <include name="completeCheckoutTest"/>
           <include name="setup"/>
-          <include name="closeBrowser"/>
-          <include name="testLogin"/>
-          <include name="setupReport"/>
-          <include name="flushReport"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.OrangeHRM.LoginTest -->
+      </class> <!-- com.BrowserStack.test.CheckoutTest -->
+      <class name="com.BrowserStack.test.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.BrowserStack.test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

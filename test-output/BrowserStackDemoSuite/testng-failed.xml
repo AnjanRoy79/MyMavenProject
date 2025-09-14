@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BrowserStackDemoSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.BrowserStack.Utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="E2E Checkout Flow(failed)">
+    <classes>
+      <class name="com.BrowserStack.test.CheckoutTest">
+        <methods>
+          <include name="completeCheckoutTest"/>
+          <include name="setup"/>
+          <include name="addItemToCartTest"/>
+          <include name="tearDown"/>
+          <include name="loginAndSetup"/>
+        </methods>
+      </class> <!-- com.BrowserStack.test.CheckoutTest -->
+      <class name="com.BrowserStack.test.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="addItemToCartTest"/>
+          <include name="tearDown"/>
+          <include name="loginAndSetup"/>
+        </methods>
+      </class> <!-- com.BrowserStack.test.AddToCartTest -->
+    </classes>
+  </test> <!-- E2E Checkout Flow(failed) -->
+</suite> <!-- Failed suite [BrowserStackDemoSuite] -->
